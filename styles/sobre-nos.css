@@ -1,0 +1,403 @@
+@font-face {
+    font-family: 'montserrat-light';
+    src: url(../font/Montserrat-Light.ttf);
+  }
+  
+
+/*reset*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body,
+div,
+header,
+nav,
+ul,
+li,
+section,
+form,
+label,
+input,
+textarea {
+    margin: 0;
+    padding: 0;
+    font-size: 1em;
+    font-family: 'montserrat-light';
+    /*14px = 100%*/
+}
+
+
+
+/*Header*/
+
+header {
+    background: linear-gradient(120deg, #392620 50%, #75442A 50%);
+    color: #fff;
+    padding-bottom: 40px;
+    width: 100%;
+}
+
+.logo {
+    margin-left: 25px;
+    margin-top: 25px;
+    width: 130px;
+    position: absolute;
+}
+
+/*menu*/
+
+nav {
+    float: right;
+    width: 90%;
+    color: #fff;
+    height: 45px;
+    overflow: hidden;
+    transition: 0.5s;
+    margin-top: 25px;
+    margin-right: 25px;
+
+}
+
+nav .menu-hamburguer {
+    float: right;
+}
+
+.abre-menu-hamburguer nav {
+    height: 230px;
+    transition: 0.5s;
+}
+
+.menu-hamburguer {
+    font-size: 4em;
+    cursor: pointer;
+    margin-top: -10px;
+}
+
+.lista-menu {
+    list-style: none;
+    padding: 0;
+    clear: both;
+
+}
+
+.lista-menu li {
+    height: 45px;
+    border-bottom: #fff 1px solid;
+}
+
+.menu {
+    text-align: center;
+}
+
+.menu a {
+    color: #fff;
+    height: 45px;
+    line-height: 45px;
+    text-decoration: none;
+}
+
+
+.banner {
+    text-align: center;
+}
+
+.prateleiraPreta {
+    margin-top: 75px;
+    width: 70%;
+}
+
+.banner h1 {
+    margin: 15px 30px 25px 30px;
+    text-align: center;
+}
+
+main {
+    text-align: center;
+    margin: 25px;
+}
+
+main h2 {
+    color: #392620;
+}
+
+p {
+    text-align: justify;
+}
+
+.janela {
+    width: 70%;
+    margin-top: 25px;
+}
+
+/*section*/
+
+.conteudo-video {
+    background-color: #75442A;
+    color: #fff;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+.video {
+    width: 50%;
+    margin-top: 50px;
+    margin-bottom: 25px;
+}
+
+section p {
+    margin: 25px 25px;
+}
+
+/*footer*/
+
+footer {
+    background-color: #392620;
+    margin-top: 35px;
+}
+
+footer .parte1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+
+
+
+.contato {
+    color: #fff;
+    font-size: 0.75em;
+    margin-top: 20px;
+    margin-left: 25px;
+    
+}
+
+.contato li {
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+.contato li a {
+    text-decoration: none;
+    cursor: pointer;
+    color: #fff;
+}
+
+.contato li img {
+    margin-top: 5px;
+    width: 25px;
+}
+
+.paginas {
+    text-align: center;
+}
+
+.paginas ul {
+    justify-content: center;
+    align-items: center;
+}
+
+.paginas li {
+    list-style: none;
+    color: #fff;
+    margin: 15px 10px 15px 10px;
+}
+
+.paginas li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.logoFooter {
+    width: auto;
+    height: 70px;
+    margin-top: 25px;
+    margin-right: 25px;
+    margin-bottom: 50px;
+    float: right;
+    padding: 0;
+}
+
+.direitos {
+    clear: both;
+    color: #fff;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.direitos hr {
+    height: 5px;
+    background-color: #fff;
+}
+
+.direitos p{
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+
+
+
+/*TABLET*/
+@media only screen and (min-width: 785px) {
+
+    main {
+        display: flex;
+        margin: 35px;
+    }
+
+    .janela {
+        width: 30%;
+        margin-top: 10px;
+        margin-left: 35px;
+    }
+
+    /*section*/
+
+    .video {
+        width: 40%;
+        margin-left: 25px;
+
+    }
+
+
+    /*footer*/
+
+
+    .contato {
+        margin-top: 40px;
+        margin-left: 40px;
+        font-size: 1em;
+    }
+
+    .paginas ul {
+        display: flex;
+        margin-top: 65px;
+    }
+
+    .logoFooter {
+        height: 100px;
+        margin-top: 40px;
+        margin-right: 40px;
+    }
+
+    .direitos {
+        clear: both;
+        color: #fff;
+        text-align: center;
+        padding-bottom: 10px;
+    }
+}
+
+/*fim da media querry Tablet*/
+
+
+
+
+
+@media only screen and (min-width: 1280px) {
+
+    /*MENU*/
+
+    nav {
+        transition: none;
+        float: right;
+        overflow: visible;
+        padding-top: 30px;
+        width: 400px;
+    }
+
+    .menu-hamburguer {
+        display: none;
+    }
+
+    .lista-menu {
+        display: flex;
+        width: 768px;
+    }
+
+    .lista-menu li {
+        border-bottom: none;
+        padding: 0 25px;
+    }
+    
+    .lista-menu a {
+        color: #fff;
+        position: relative;
+        text-decoration: none;
+        padding-bottom: 2px;
+    }
+
+    .lista-menu li a::before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 4px;
+        border-radius: 4px;
+        background-color: #fff;
+        bottom: 0;
+        left: 0;
+        transform-origin: right;
+        transform: scaleX(0);
+        transition: transform .3s ease-in-out;
+    }
+
+    .lista-menu a:hover::before {
+        transform-origin: left;
+        transform: scaleX(1);
+
+    }
+
+    .banner {
+        clear: both;
+        padding-bottom: 100px;
+    }
+
+    .prateleiraPreta {
+        width: 30%;
+    }
+
+
+    .banner p {
+        margin-top: 35px;
+        margin-left: 200px;
+        margin-right: 200px;
+    }
+
+
+    /*MAIN*/
+
+    main {
+        display: flex;
+        margin-left: 300px;
+        margin-right: 300px;
+        align-items: center;
+    }
+
+    .mainTexto {
+        width: 80%;
+    }
+
+    .janela {
+        margin-top: 10px;
+        margin-left: 35px;
+    }
+
+
+    /*section*/
+
+    .video {
+        width: 15%;
+    }
+
+    .conteudo-video p{
+        margin-left: 200px;
+        margin-right: 200px;
+    }
+
+}

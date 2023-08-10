@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/contato.css">
+  <link rel="icon" href="imagens/Logo final - fundo.png" type="image/x-icon">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+
+  <title>Marcenaria Medemoveis - Contato</title>
+</head>
+
+<body>
+
+  <header>
+    <img src="imagens/logo-branco.png" alt="logo" class="logo">
+
+    <nav>
+      <div class="menu">
+        <div class="menu-hamburguer">&equiv;</div>
+        <ul class="lista-menu">
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li>
+            <a href="contato.html">Contato</a>
+          </li>
+          <li>
+            <a href="sobre-nos.html">Sobre nós</a>
+          </li>
+        </ul>
+      </div><!--fim da div menu-->
+
+    </nav>
+
+    <div class="banner">
+
+      <img src="imagens/movel-grande.png" alt="estante grande" class="foto-banner">
+
+      <div class="textoBanner">
+        <h1>Experimente a alegria de possuir móveis tão únicos quanto você na Marcenaria Medemoveis.</h1>
+      </div><!--fim da div textoBanner-->
+    </div><!--fim da div banner-->
+
+  </header>
+
+  <main>
+    <div class="galeria-escura">
+      <img src="imagens/armário-branco.png" alt="Armário Branco">
+      <div class="desc">Guarda-roupa branco feito para um closet</div>
+    </div><!--fim da div gallery-->
+
+    <div class="galeria-clara">
+      <img src="imagens/gabinete-preto.png" alt="gabinete preto">
+      <div class="desc">Gabinete preto feito para cozinha moderna</div>
+    </div><!--fim da div gallery-->
+
+    <div class="galeria-clara">
+      <img src="imagens/armário-cortina.png" alt="Northern Lights">
+      <div class="desc">Guarda-roupa cinza espelhado</div>
+    </div><!--fim da div gallery-->
+
+    <div class="galeria-escura">
+      <img src="imagens/painel-madeira.png" alt="painel quadriculado de madeira">
+      <div class="desc">Painel de madeira quadriculado</div>
+    </div><!--fim da div gallery-->
+  </main>
+
+  <section class="cnt">
+    <h3>Faça seu orçamento aqui!</h3>
+
+    <form id="my-form" action="https://formspree.io/f/xknljgdp" method="post">
+      <input type="text" id="nome" name="nome" size="30" maxlength="30" placeholder="Escreva seu nome aqui!" required>
+
+      <input type="tel" id="telefone" name="telefone" size="20" maxlength="16" placeholder="Escreva seu telefone aqui! (XX)00000-0000"
+        pattern="\([0-9]{2}\)[0-9]{4,6}-[0-9]{3,4}" title="(XX)00000-0000" required>
+
+      <input type="email" id="email" name="email" size="30" maxlength="30"
+        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$]" title="email@provedor.com"
+        placeholder="Escreva seu e-mail aqui!" required>
+
+      <div class="chat-texto">
+        <textarea name="menssagem" id="menssagem" cols="28" rows="7" maxlength="150"
+          placeholder="Como você gostaria que seu móvel fosse?" required></textarea>
+      </div>
+      <button class="submit" type="submit" value="Enviar" id="my-form-button">Enviar</button>
+
+      <p id="my-form-status"></p>
+
+    </form>
+
+
+  </section>
+
+
+  <section class="mapa">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14634.078330791695!2d-46.4578354!3d-23.5138076!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce61467e919e63%3A0x7fa012ce51cacc4f!2sMarcenaria%20Medemoveis!5e0!3m2!1spt-BR!2sbr!4v1691438858263!5m2!1spt-BR!2sbr"
+      height="400" style="border:0;" allowfullscreen="" loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </section>
+
+  <footer>
+    <div class="parte1">
+        <div class="contato">
+            <ul>
+                <li><a target="blank" href="https://api.whatsapp.com/send?1=pt_BR&phone=5511987423173"><img
+                            src="imagens/Whatsapp.png" alt="logo whatsapp"> +55 11
+                        98742-3173</a>
+                </li>
+                <li><a target="blank" href="https://www.instagram.com/marcenaria_medemoveis/"><img
+                            src="imagens/instagram.png" alt="logo instagram"> marcenaria_medemoveis</a>
+                </li>
+                <li><a target="blank" href="#"><img src="imagens/email.png" alt="logo email">
+                        m.mede2121@gmail.com</a>
+                </li>
+            </ul>
+        </div><!--fim da div contatos-->
+        <div class="paginas">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li><a href="sobre-nos.html">Sobre nós</a></li>
+            </ul>
+        </div><!--fim da div paginas-->
+
+
+        <div> <img src="imagens/logo-branco.png" alt="logo da empresa" class="logoFooter"></div>
+
+    </div><!-- fim da primeira parte-->
+
+    <div class="direitos">
+        <hr>
+        <p>© Todos os direitos reservados</p>
+    </div><!--fim da div direitos-->
+</footer>
+
+
+  <script src="js/contato.js"></script>
+</body>
+
+</html>
